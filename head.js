@@ -1,3 +1,5 @@
+const assertEqual = require("./assertEqual");
+
 // * old implementation for head.js which used assertEqual for testing
 // const assertEqual = function (actual, expected) {
 //   if (actual === expected) {
