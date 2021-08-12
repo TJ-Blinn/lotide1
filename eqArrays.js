@@ -1,16 +1,10 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed:  ${actual}  ===  ${expected} .`);
-  } else if (actual !== expected) {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !==  ${expected} .`);
-  }
-};
-
-// Test Code
-// assertEqual("Lighthouse Labs", "Lighthouse Labs");
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-// assertEqual(1, 2);
+// const assertEqual = function (actual, expected) {
+//   if (actual === expected) {
+//     console.log(`✅✅✅ Assertion Passed:  ${actual}  ===  ${expected} .`);
+//   } else if (actual !== expected) {
+//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !==  ${expected} .`);
+//   }
+// };
 
 // Implement a function eqArrays which takes in two arrays and returns true or false, based on a perfect match.
 // compare length of each before continuing
@@ -30,5 +24,9 @@ const eqArrays = function (arr1, arr2) {
   return false;
   // if array length 1 is NOT equal ( === ) to array length 2, return false
 };
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => should FAIL
+
+module.exports = eqArrays;
+
+// TEST CODE
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => should FAIL
