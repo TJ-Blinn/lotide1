@@ -1,5 +1,5 @@
 {
-  "name": "lotide1",
+  "name": "@tj-blinn/lotide1",
   "version": "1.0.0",
   "description": "",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/TJ-Blinn/lotide1.git"
   },
-  "author": "",
+  "author": "Anthony-James (TJ) Blinn",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TJ-Blinn/lotide1/issues"

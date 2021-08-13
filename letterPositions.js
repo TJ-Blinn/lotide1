@@ -38,6 +38,8 @@ const letterPositions = function (sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 //letterPositions(noSpaces);
 
 /// TEST CASES BELOW

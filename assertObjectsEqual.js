@@ -1,4 +1,4 @@
-const util = require('util');
+const util = require("util");
 
 const eqArrays = function (arr1, arr2) {
   if (arr1.length === arr2.length) {
@@ -49,9 +49,7 @@ const eqObjects = function (object1, object2) {
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 
-
-const assertObjectsEqual = function(actual, expected) {
-  
+const assertObjectsEqual = function (actual, expected) {
   if (eqObjects(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${util.inspect(actual)} === ${util.inspect(expected)}`); // detailed object output to the console:
   } else {
@@ -60,6 +58,7 @@ const assertObjectsEqual = function(actual, expected) {
   console.log(`Example label: ${util.inspect(actual)}`);
 };
 
-
 // TEST CODE
 assertObjectsEqual(ab, ba);
+
+module.exports = assertObjectsEqual;

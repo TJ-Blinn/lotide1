@@ -43,6 +43,8 @@ const without = function (source, toRemove) {
   return results;
 };
 
+module.exports = without;
+
 // Without function Assertions (TEST CASES)
 without([1, 2, 3], [1]); // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]

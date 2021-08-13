@@ -12,7 +12,6 @@ const assertEqual = function (actual, expected) {
     // } else if (actual !== expected) {
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !==  ${expected}`);
- 
   }
 };
 
@@ -42,6 +41,7 @@ const takeUntil = function (array, callback) {
   }
   return newArray;
 };
+module.exports = takeUntil;
 
 // Test code numbers # 1
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
@@ -60,5 +60,3 @@ const actual = eqArrays(takeUntil(data2, callback2), ["I've", "been", "to", "Hol
 console.log(actual); // returns true
 
 assertEqual(actual, true);
-
-

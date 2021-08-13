@@ -40,6 +40,8 @@ const map = (array, callback) => {
   return results;
 };
 
+module.exports = map;
+
 const results1 = map(words, (word) => word[0]); // callback func here is simply stating to print index 0
 console.log(results1);
 

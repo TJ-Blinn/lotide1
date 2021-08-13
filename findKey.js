@@ -15,7 +15,7 @@ const assertEqual = function (actual, expected) {
 
 const findKey = function (restaurants, cb) {
   const keysArray = Object.keys(restaurants);
-  
+
   for (let element of keysArray) {
     if (cb(restaurants[element])) {
       return element;
@@ -24,15 +24,19 @@ const findKey = function (restaurants, cb) {
   return undefined;
 };
 
+module.exports = findKey;
+
 const restaurants = {
   "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
+  Akaleri: { stars: 3 },
+  noma: { stars: 2 },
+  elBulli: { stars: 3 },
+  Ora: { stars: 2 },
+  Akelarre: { stars: 3 },
 };
 
 // Test cases
-assertEqual(findKey(restaurants, (x) => x.stars === 2),
-  "noma");
+assertEqual(
+  findKey(restaurants, (x) => x.stars === 2),
+  "noma"
+);
