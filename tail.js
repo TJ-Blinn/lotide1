@@ -1,16 +1,16 @@
 // * old implementation for head.js which used assertEqual for testing
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`✅✅✅ Assertion Passed:  ${actual}  ===  ${expected} .`);
-//   } else if (actual !== expected) {
-//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !==  ${expected} .`);
-//   }
-// };
+const assertEqual = function (actual, expected) {
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed:  ${actual}  ===  ${expected} .`);
+  } else if (actual !== expected) {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !==  ${expected} .`);
+  }
+};
 
 const tail = function (arr) {
   if (arr.length < 2) {
     // if array is 1 element long, return that element
-    return arr;
+    return [];
   } else {
     return arr.slice(1);
     // slice prototype will START array from the index position in brackets (1).
@@ -32,8 +32,9 @@ module.exports = tail;
 
 // const oneElement = ["Only one element"];
 // tail(oneElement);
-// assertEqual(oneElement.length, []);
+// console.log({ oneElement });
+// assertEqual(tail(oneElement).length, 0);
 
 // const empty = [];
 // tail(empty);
-// assertEqual(empty.length, []);
+// assertEqual(tail(empty).length, 0);
