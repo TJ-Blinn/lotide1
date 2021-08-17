@@ -16,6 +16,7 @@ const map = require("./map");
 const takeUntil = require("./takeUntil");
 const without = require("./without");
 const findKeyByValue = require("./findKeyByValue");
+const flatten = require("./flatten");
 
 // prettier-ignore
 module.exports = {
@@ -34,7 +35,8 @@ module.exports = {
   letterPositions,
   map,
   takeUntil,
-  without
+  without,
+  flatten
 };
 console.log(exports);
 
