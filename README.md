@@ -13,7 +13,7 @@ This project was created and published by me as part of my learnings at Lighthou
 **Install it:**
 
 `npm install @tj-blinn/lotide`
-
+6
 **Require it:**
 
 `const _ = require('@tj-blinn/lotide');`
@@ -57,3 +57,5 @@ The following functions are currently implemented:
     15. function15(takeUntil): Function that takes 2 parameters, an array and callback, collecting items from a provided array until the callback provided returns a truthy value.
 
     16. function16(without): Function that takes 2 arrays with one parameter telling the other which elements to exclude and returns altered result.
+
+    17. function 17(flatten): Function that takes in an array that contains elements including nested array of elements and returns a flattened version of the array.
